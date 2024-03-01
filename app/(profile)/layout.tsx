@@ -1,3 +1,4 @@
+import { Footer } from "../components/footer";
 import { Navbar } from "../components/navbar";
 
 export default function ProfileLayout({
@@ -6,9 +7,10 @@ export default function ProfileLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <Navbar />
-      <main>{children}</main>
+      <main className="flex-grow">{children}</main>
+      <Footer />
     </div>
   );
 }
