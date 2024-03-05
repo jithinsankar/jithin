@@ -26,7 +26,7 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <section className="py-4 px-2">
+          <section className="py-4 px-2" id="about">
             IT professional, consistent gym goer, video editor, occassional FPS
             gamer and 3D artist. Interested in building SaaS applications using
             Gen AI.
@@ -40,7 +40,7 @@ export default function Home() {
             <PostCard />
           </div>
           <div className="mt-6">
-            <h2 className="text-2xl font-medium tracking-tight" id="posts">
+            <h2 className="text-2xl font-medium tracking-tight" id="contact">
               Contact
             </h2>
             <section className="mt-4 p4">
