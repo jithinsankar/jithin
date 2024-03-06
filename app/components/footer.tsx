@@ -10,7 +10,7 @@ export const Footer = () => {
             <a href="https://www.linkedin.com/in/jithinsankarnk/">LinkedIn</a>
           </div>
           <div className="hover:opacity-75 transition">
-            <a href="https://twitter.com/jithin_sank4r">Twitter</a>
+            <a href="https://twitter.com/jithins4nkar">Twitter</a>
           </div>
           <div className="hover:opacity-75 transition">
             <a href="https://github.com/jithinsankar">GitHub</a>
