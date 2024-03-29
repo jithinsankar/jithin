@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogDirectory = path.join(process.cwd(), "app/notes"); // your blog directory maybe different
 
   // Retrieve all MDX file paths recursively
-  const mdxFilePaths = getAllMdxFilePaths(blogDirectory).filter(path => path.endsWith('mdx')&& (!path.endsWith('notes/page.mdx'))  );
+  const mdxFilePaths = getAllMdxFilePaths(blogDirectory).filter(path => path.endsWith('mdx') && (!path.endsWith('notes/page.mdx')));
 
   console.log(mdxFilePaths)
 
@@ -54,10 +54,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
-            url: "https://jithin.vercel.app/notes",
-            lastModified: new Date(),
+      url: "https://jithin.vercel.app/notes",
+      lastModified: new Date(),
 
-          },
+    },
     // Add other URLs here
   );
 
