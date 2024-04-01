@@ -1,9 +1,43 @@
-## tmux quickstart
+## TMUX Quickstart Guide
 
-tmux is a great tool to get work done on while working in headless environments especially in EC2 servers. Tmux can be used to manage sessions, split windows and much more.
-```
-`ctrl+b %` split vertically
-`ctrl+b “` split horizontaly
-`ctrl+b arrow` to switch
-`ctrl+b page down` to scroll
-```
+---
+
+**Introduction to TMUX**
+
+TMUX is a powerful terminal multiplexer that enhances productivity, particularly in headless environments like EC2 servers. It enables users to manage multiple terminal sessions within a single window, facilitating efficient multitasking and remote work. TMUX is indispensable for system administrators, developers, and anyone working extensively in the command line.
+
+**Basic Commands**
+
+- Start a new session: `tmux new -s session_name`
+- Attach to an existing session: `tmux attach -t session_name`
+- Detach from the current session: `Ctrl + b, d`
+
+**Session Management**
+
+- Create a new session: `tmux new -s session_name`
+- List existing sessions: `tmux ls`
+- Attach to a session: `tmux attach -t session_name`
+- Kill a session: `tmux kill-session -t session_name`
+
+**Window Management**
+
+- Create a new window: `Ctrl + b, c`
+- Switch between windows: `Ctrl + b, window_number`
+- Rename a window: `Ctrl + b, ,`
+- Close a window: `Ctrl + b, &`
+
+**Pane Management**
+
+- Split the current pane horizontally: `Ctrl + b, %`
+- Split the current pane vertically: `Ctrl + b, "`
+- Switch between panes: `Ctrl + b, arrow_keys`
+- Resize a pane: `Ctrl + b, hold down arrow_key`
+
+**Other Useful Commands**
+
+- Copy mode: `Ctrl + b, [`
+- Paste text: `Ctrl + b, ]`
+
+TMUX boosts productivity by allowing users to manage multiple terminal sessions efficiently, ideal for tasks such as remote server management, software development, and system administration.
+
+---
