@@ -1,0 +1,42 @@
+## My VS code setup with vim motions
+
+Add this to `Ctrl+P` ---> `>Preferences: Open User Settings(JSON)`
+
+```
+{
+"workbench.colorTheme": "poimandres",
+"editor.formatOnSave": true,
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"vim.insertModeKeyBindings": [
+{
+"before": ["j", "j"],
+"after": ["<Esc>"]
+}
+],
+"vim.useSystemClipboard": true,
+"vim.normalModeKeyBindingsNonRecursive": [
+{
+"before": ["<Enter>"],
+"commands": ["editor.action.insertLineAfter"],
+"after": ["<Esc>"]
+},
+{
+"before": ["<leader>", "w"],
+"commands": [":set wrap!", ":set wrap?", "<Esc>"]
+},
+{
+"before": ["<C-n>"],
+"commands": [":nohl"]
+}
+],
+"vim.leader": "<space>",
+"vim.handleKeys": {
+"<C-d>": false,
+"<C-a>": false,
+"<C-f>": false
+},
+"vim.easymotion": true,
+
+"editor.wordWrap": "on"
+}
+```
